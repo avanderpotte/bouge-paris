@@ -1,0 +1,111 @@
+.panel {
+  position: absolute;
+  top: 0;
+  left: 30vw;
+  width: 70vw;
+  height: calc(100vh - 80px);
+  z-index: 2;
+  transition: all 0.3s ease;
+  background-color: $white;
+
+  &.ng-hide {
+    top: 100vw;
+  }
+
+  .back-btn {
+    cursor: pointer;
+    color: $darkenPrimary;
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    &:hover {
+      &:after {
+        left: 40%;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -100%;
+      bottom: 0;
+      width: 80%;
+      height: 3px;
+      background-color: $darkenPrimary;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .head {
+    background-color: $white;
+    .svg-holder {
+      position: relative;
+      display: inline-block;
+      margin-left: 20%;
+      svg {
+        width: 10vw;
+        height: auto;
+        margin-bottom: 20px;
+
+        .st0{fill: $darkenPrimary;}
+        .st1{fill: $white;}
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 90%;
+        height: 8px;
+        background-color: $darkenPrimary;
+      }
+    }
+
+  }
+
+  .list {
+    overflow-y: auto;
+    padding-top: 3rem;
+    width: calc(100% - 5vw);
+    height: calc(100% - 12vw);
+
+    &::-webkit-scrollbar {
+      width: 0.75rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+      outline: 1px solid slategrey;
+    }
+
+    .item {
+      width: 60%;
+      padding: 0 20%;
+      margin-bottom: 1rem;
+
+      h2 {
+        a, span {
+          color: $darkenPrimary;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-decoration: none;
+        }
+      }
+
+      p {
+        color: $darkenPrimary;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+}

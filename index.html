@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="datavizApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datavisualisation des arrondissements de Paris selon leur attrait culturel">
+  <title content="Bouge Paris"></title>
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,600|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- build:css /assets/css/app.min.css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+  <!-- endbuild -->
+  <base href="/">
+</head>
+<body ng-init="$root.showCredits = false">
+  <nav-top></nav-top>
+  <div id="wrapper">
+    <div ui-view class="view" ng-class="'view-'+$root.title.toLowerCase()" ng-cloak></div>
+  </div>
+  <p id="creditsLink" ng-click="$root.showCredits = !$root.showCredits">&Agrave; propos</p>
+  <credits-overlay ng-show="$root.showCredits"></credits-overlay>
+
+  <!-- build:js /assets/js/angular.min.js -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+  <script src="bower_components/chartist/dist/chartist.min.js"></script>
+  <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js /assets/js/app.min.js -->
+  <script src="app/app.js"></script>
+  <script src="app/app.utils.js"></script>
+  <script src="app/controllers/accueilController.js"></script>
+  <script src="app/controllers/arrondissementController.js"></script>
+  <script src="app/controllers/statistiquesController.js"></script>
+  <script src="app/directives/nav/navDirective.js"></script>
+  <script src="app/directives/icon/iconDirective.js"></script>
+  <script src="app/directives/credits/creditsDirective.js"></script>
+  <script src="app/factories/arrondissementFactory.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

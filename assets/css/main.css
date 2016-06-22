@@ -1,0 +1,2056 @@
+/* 640px */
+/* 1024px */
+/* 1440px */
+/* 1920px */
+.vac {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+section.full {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  overflow: hidden; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #171717; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+.view {
+  height: 100%;
+  -webkit-transform: 50% 50%;
+  transform: 50% 50%; }
+
+.view.ng-enter {
+  z-index: 8888; }
+
+.view.ng-leave {
+  z-index: 9999; }
+
+.view-accueil.ng-enter {
+  -webkit-animation: fadeIn 0.3s both ease-in-out 0.3s;
+  animation: fadeIn 0.3s both ease-in-out 0.3s; }
+
+.view-accueil.ng-leave {
+  -webkit-animation: fadeOut 0.3s both ease-in;
+  animation: fadeOut 0.3s both ease-in; }
+
+.view-arrondissement.ng-enter {
+  -webkit-animation: zoomIn 0.3s both ease;
+  animation: zoomIn 0.3s both ease; }
+
+.view-arrondissement.ng-leave {
+  -webkit-animation: fadeOut 0.3s both linear;
+  animation: fadeOut 0.3s both linear; }
+
+.view-statistiques.ng-enter {
+  -webkit-animation: fadeIn 0.3s both ease-in-out 0.3s;
+  animation: fadeIn 0.3s both ease-in-out 0.3s; }
+
+.view-statistiques.ng-leave {
+  -webkit-animation: fadeOut 0.3s both ease-in;
+  animation: fadeOut 0.3s both ease-in; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-webkit-keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+@keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+nav#top-bar {
+  height: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0.5rem 5vw;
+  box-sizing: border-box;
+  z-index: 3;
+  background-color: #ffffff; }
+  nav#top-bar h1 a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.375rem;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #171717;
+    display: block; }
+  nav#top-bar ul {
+    margin: 0;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: 5vw; }
+    nav#top-bar ul li {
+      height: 100%; }
+      nav#top-bar ul li a {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #171717;
+        text-decoration: none;
+        position: relative;
+        overflow-x: hidden; }
+        nav#top-bar ul li a:hover:after, nav#top-bar ul li a.active:after {
+          left: 40%; }
+        nav#top-bar ul li a:after {
+          content: '';
+          position: absolute;
+          left: -100%;
+          bottom: 0;
+          width: 80%;
+          height: 3px;
+          background-color: #171717;
+          transition: all 0.5s ease-in-out; }
+
+#creditsLink {
+  color: #171717;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: 300;
+  font-style: italic;
+  -webkit-transform: rotate(-90deg) translate(30%, 60%);
+  transform: rotate(-90deg) translate(30%, 60%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  z-index: 3; }
+  #creditsLink:hover {
+    -webkit-transform: rotate(-90deg) translate(50%, 60%);
+    transform: rotate(-90deg) translate(50%, 60%); }
+
+#credits {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  z-index: 3;
+  background-image: url("/assets/img/apropos/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 5vh 0;
+  box-sizing: border-box; }
+  #credits.ng-hide {
+    left: 100%; }
+  #credits .close {
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+    #credits .close:hover:before, #credits .close:hover:after {
+      background-color: #171717; }
+    #credits .close:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: #7d7d7d;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: all 0.3s ease;
+      -webkit-transform-origin: center center;
+      transform-origin: center center; }
+    #credits .close:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: #7d7d7d;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      transition: all 0.3s ease;
+      -webkit-transform-origin: center center;
+      transform-origin: center center; }
+  #credits p.title {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.375rem;
+    letter-spacing: 5px;
+    color: #171717;
+    position: absolute;
+    top: 3vh;
+    left: 5vw; }
+  #credits .row {
+    width: 60vw; }
+    #credits .row h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 3rem; }
+      #credits .row h2:after {
+        content: '';
+        position: absolute;
+        left: 40%;
+        bottom: -20px;
+        width: 80%;
+        height: 5px;
+        background-color: #171717;
+        transition: all 0.5s ease-in-out; }
+    #credits .row p {
+      line-height: 1.5; }
+    #credits .row img {
+      max-height: 20vh; }
+    #credits .row p.authors {
+      padding: 1rem 0;
+      position: relative; }
+      #credits .row p.authors a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        color: #171717;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 5px;
+        vertical-align: middle; }
+        #credits .row p.authors a:hover {
+          color: #4033C1; }
+          #credits .row p.authors a:hover:after {
+            left: 40%; }
+        #credits .row p.authors a:after {
+          content: '';
+          position: absolute;
+          left: -100%;
+          bottom: 0;
+          width: 80%;
+          height: 3px;
+          background-color: #4033C1;
+          transition: all 0.5s ease-in-out; }
+
+aside.legend {
+  position: absolute;
+  top: 0;
+  left: calc(5vw + 1rem);
+  width: 10vw;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  aside.legend ul {
+    margin: 0; }
+    aside.legend ul li {
+      padding: 0 0 1.5rem 0;
+      font-weight: 300;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      aside.legend ul li:before {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        top: 0;
+        left: -1.5rem;
+        border-radius: 50%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        transition: all 0.3s ease;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      aside.legend ul li:hover, aside.legend ul li.active {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px); }
+        aside.legend ul li:hover:before, aside.legend ul li.active:before {
+          -webkit-transform: scale(1.4);
+          transform: scale(1.4); }
+      aside.legend ul li.dejante:before {
+        background-color: #8E8EF4; }
+      aside.legend ul li.ambiance:before {
+        background-color: #4033C1; }
+      aside.legend ul li.tranquille:before {
+        background-color: #3D38E8; }
+      aside.legend ul li.calme:before {
+        background-color: #130084; }
+
+nav.weeks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 100vw; }
+  nav.weeks ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20vw;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    nav.weeks ul li {
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      padding: 1rem;
+      color: #cccccc;
+      cursor: pointer;
+      position: relative;
+      overflow-x: hidden;
+      transition: all 0.3s ease; }
+      nav.weeks ul li:hover:not(.active) {
+        color: #171717; }
+        nav.weeks ul li:hover:not(.active):after {
+          left: 40%; }
+      nav.weeks ul li:after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: #171717;
+        transition: all 0.5s ease-in-out; }
+      nav.weeks ul li.active {
+        color: #171717;
+        font-weight: 700;
+        font-size: 1.1rem; }
+
+#wrapper {
+  position: absolute;
+  top: 80px;
+  height: calc(100vh - 80px);
+  overflow: hidden; }
+
+#accueil {
+  height: calc(100vh - 80px);
+  width: 100vw; }
+  #accueil p.subtitle {
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    font-size: 1.125rem; }
+  #accueil .svg-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff; }
+    #accueil .svg-holder #num-hover {
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      color: #ffffff; }
+    #accueil .svg-holder svg {
+      display: block;
+      width: auto;
+      height: 80%;
+      max-height: 80%;
+      width: auto;
+      margin: 0 auto;
+      padding-top: 5vh; }
+      #accueil .svg-holder svg g {
+        transition: opacity 0.3s ease-out; }
+        #accueil .svg-holder svg g:hover text {
+          opacity: 1; }
+        #accueil .svg-holder svg g path {
+          fill: transparent;
+          cursor: pointer;
+          -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          transition: -webkit-transform 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+          transition: transform 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
+          #accueil .svg-holder svg g path:hover {
+            opacity: 1;
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+        #accueil .svg-holder svg g text {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          fill: #ffffff;
+          cursor: pointer;
+          opacity: 0;
+          transition: all 0.5s ease-out;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+        #accueil .svg-holder svg g.dejante path {
+          fill: #8E8EF4; }
+        #accueil .svg-holder svg g.ambiance path {
+          fill: #4033C1; }
+        #accueil .svg-holder svg g.tranquille path {
+          fill: #3D38E8; }
+        #accueil .svg-holder svg g.calme path {
+          fill: #130084; }
+
+#arrondissement {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100%; }
+  #arrondissement.dejante .left {
+    height: 100%;
+    width: 30vw;
+    position: relative;
+    background-color: #8E8EF4;
+    z-index: 1; }
+    #arrondissement.dejante .left .name {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 2rem;
+      position: absolute;
+      top: 5%;
+      left: 20%; }
+      #arrondissement.dejante .left .name:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 100%;
+        height: 8px;
+        background-color: #130084; }
+    #arrondissement.dejante .left .btn {
+      position: absolute;
+      top: 15%;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.375rem;
+      font-style: italic;
+      display: inline-block;
+      width: 70%;
+      margin: 0 15%;
+      padding: 1rem 0;
+      border: solid 6px #130084;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer; }
+      #arrondissement.dejante .left .btn:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -110%;
+        width: 100%;
+        height: 100%;
+        background-color: #130084;
+        border: solid 6px #130084;
+        transition: left 0.3s ease;
+        z-index: -1; }
+      #arrondissement.dejante .left .btn:hover:before {
+        left: 0; }
+    #arrondissement.dejante .left .img-holder {
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 10%;
+      width: 100%;
+      box-sizing: border-box; }
+      #arrondissement.dejante .left .img-holder img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+      #arrondissement.dejante .left .img-holder:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 60%;
+        height: 12px;
+        background-color: #130084; }
+  #arrondissement.dejante .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #arrondissement.dejante .right.three .row:first-child {
+      background-color: #ffffff; }
+    #arrondissement.dejante .right.three .row:nth-child(2) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #fcfcfc; }
+    #arrondissement.dejante .right.three .row:nth-child(3) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #f7f7f7; }
+    #arrondissement.dejante .right.two .row:first-child {
+      background-color: #fcfcfc; }
+    #arrondissement.dejante .right.two .row:last-child {
+      background-color: #f7f7f7; }
+    #arrondissement.dejante .right.one .row {
+      background-color: #ffffff;
+      height: 100%; }
+    #arrondissement.dejante .right .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 50%;
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      cursor: pointer; }
+      #arrondissement.dejante .right .row:hover .svg-holder svg {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15); }
+      #arrondissement.dejante .right .row p {
+        font-style: italic;
+        color: #130084;
+        margin-bottom: 1rem; }
+        #arrondissement.dejante .right .row p span.count {
+          font-size: 4rem;
+          font-weight: 700; }
+        #arrondissement.dejante .right .row p span.name {
+          font-size: 1.875rem;
+          font-weight: 600; }
+      #arrondissement.dejante .right .row .svg-holder {
+        position: relative; }
+        #arrondissement.dejante .right .row .svg-holder svg {
+          display: block;
+          width: 10vw;
+          height: auto;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          transition: all 0.3s ease; }
+          #arrondissement.dejante .right .row .svg-holder svg .st0 {
+            fill: #130084; }
+          #arrondissement.dejante .right .row .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.dejante .right .row .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: -20px;
+          width: 90%;
+          height: 8px;
+          background-color: #130084; }
+  #arrondissement.dejante .panel {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 70vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease;
+    background-color: #ffffff; }
+    #arrondissement.dejante .panel.ng-hide {
+      top: 100vw; }
+    #arrondissement.dejante .panel .back-btn {
+      cursor: pointer;
+      color: #130084;
+      position: absolute;
+      top: 3vh;
+      right: 3vh;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+      overflow-x: hidden; }
+      #arrondissement.dejante .panel .back-btn:hover:after {
+        left: 40%; }
+      #arrondissement.dejante .panel .back-btn:after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: #130084;
+        transition: all 0.5s ease-in-out; }
+    #arrondissement.dejante .panel .head {
+      background-color: #ffffff; }
+      #arrondissement.dejante .panel .head .svg-holder {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%; }
+        #arrondissement.dejante .panel .head .svg-holder svg {
+          width: 10vw;
+          height: auto;
+          margin-bottom: 20px; }
+          #arrondissement.dejante .panel .head .svg-holder svg .st0 {
+            fill: #130084; }
+          #arrondissement.dejante .panel .head .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.dejante .panel .head .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: 0;
+          width: 90%;
+          height: 8px;
+          background-color: #130084; }
+    #arrondissement.dejante .panel .list {
+      overflow-y: auto;
+      padding-top: 3rem;
+      width: calc(100% - 5vw);
+      height: calc(100% - 12vw); }
+      #arrondissement.dejante .panel .list::-webkit-scrollbar {
+        width: 0.75rem; }
+      #arrondissement.dejante .panel .list::-webkit-scrollbar-thumb {
+        background-color: #8E8EF4;
+        outline: 1px solid slategrey; }
+      #arrondissement.dejante .panel .list .item {
+        width: 60%;
+        padding: 0 20%;
+        margin-bottom: 1rem; }
+        #arrondissement.dejante .panel .list .item h2 a, #arrondissement.dejante .panel .list .item h2 span {
+          color: #130084;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-decoration: none; }
+        #arrondissement.dejante .panel .list .item p {
+          color: #130084;
+          padding-left: 1rem;
+          padding-bottom: 0.5rem;
+          font-weight: 400;
+          font-style: italic; }
+  #arrondissement.dejante #map {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease; }
+    #arrondissement.dejante #map.ng-hide {
+      top: 100vw; }
+    #arrondissement.dejante #map .back-btn {
+      color: #171717;
+      font-weight: 600;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      right: 3vh;
+      top: 3vh;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      #arrondissement.dejante #map .back-btn:hover {
+        background-color: #f7f7f7; }
+    #arrondissement.dejante #map .map-inner {
+      height: 100% !important; }
+      #arrondissement.dejante #map .map-inner .gm-style-iw {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0.5rem;
+        background-color: #ffffff;
+        box-shadow: none;
+        border: solid 4px #130084; }
+        #arrondissement.dejante #map .map-inner .gm-style-iw h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700; }
+  #arrondissement.ambiance .left {
+    height: 100%;
+    width: 30vw;
+    position: relative;
+    background-color: #4033C1;
+    z-index: 1; }
+    #arrondissement.ambiance .left .name {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 2rem;
+      position: absolute;
+      top: 5%;
+      left: 20%; }
+      #arrondissement.ambiance .left .name:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 100%;
+        height: 8px;
+        background-color: #8e8ef4; }
+    #arrondissement.ambiance .left .btn {
+      position: absolute;
+      top: 15%;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.375rem;
+      font-style: italic;
+      display: inline-block;
+      width: 70%;
+      margin: 0 15%;
+      padding: 1rem 0;
+      border: solid 6px #8e8ef4;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer; }
+      #arrondissement.ambiance .left .btn:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -110%;
+        width: 100%;
+        height: 100%;
+        background-color: #8e8ef4;
+        border: solid 6px #8e8ef4;
+        transition: left 0.3s ease;
+        z-index: -1; }
+      #arrondissement.ambiance .left .btn:hover:before {
+        left: 0; }
+    #arrondissement.ambiance .left .img-holder {
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 10%;
+      width: 100%;
+      box-sizing: border-box; }
+      #arrondissement.ambiance .left .img-holder img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+      #arrondissement.ambiance .left .img-holder:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 60%;
+        height: 12px;
+        background-color: #8e8ef4; }
+  #arrondissement.ambiance .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #arrondissement.ambiance .right.three .row:first-child {
+      background-color: #ffffff; }
+    #arrondissement.ambiance .right.three .row:nth-child(2) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #fcfcfc; }
+    #arrondissement.ambiance .right.three .row:nth-child(3) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #f7f7f7; }
+    #arrondissement.ambiance .right.two .row:first-child {
+      background-color: #fcfcfc; }
+    #arrondissement.ambiance .right.two .row:last-child {
+      background-color: #f7f7f7; }
+    #arrondissement.ambiance .right.one .row {
+      background-color: #ffffff;
+      height: 100%; }
+    #arrondissement.ambiance .right .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 50%;
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      cursor: pointer; }
+      #arrondissement.ambiance .right .row:hover .svg-holder svg {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15); }
+      #arrondissement.ambiance .right .row p {
+        font-style: italic;
+        color: #8e8ef4;
+        margin-bottom: 1rem; }
+        #arrondissement.ambiance .right .row p span.count {
+          font-size: 4rem;
+          font-weight: 700; }
+        #arrondissement.ambiance .right .row p span.name {
+          font-size: 1.875rem;
+          font-weight: 600; }
+      #arrondissement.ambiance .right .row .svg-holder {
+        position: relative; }
+        #arrondissement.ambiance .right .row .svg-holder svg {
+          display: block;
+          width: 10vw;
+          height: auto;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          transition: all 0.3s ease; }
+          #arrondissement.ambiance .right .row .svg-holder svg .st0 {
+            fill: #8e8ef4; }
+          #arrondissement.ambiance .right .row .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.ambiance .right .row .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: -20px;
+          width: 90%;
+          height: 8px;
+          background-color: #8e8ef4; }
+  #arrondissement.ambiance .panel {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 70vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease;
+    background-color: #ffffff; }
+    #arrondissement.ambiance .panel.ng-hide {
+      top: 100vw; }
+    #arrondissement.ambiance .panel .back-btn {
+      cursor: pointer;
+      color: #8e8ef4;
+      position: absolute;
+      top: 3vh;
+      right: 3vh;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+      overflow-x: hidden; }
+      #arrondissement.ambiance .panel .back-btn:hover:after {
+        left: 40%; }
+      #arrondissement.ambiance .panel .back-btn:after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: #8e8ef4;
+        transition: all 0.5s ease-in-out; }
+    #arrondissement.ambiance .panel .head {
+      background-color: #ffffff; }
+      #arrondissement.ambiance .panel .head .svg-holder {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%; }
+        #arrondissement.ambiance .panel .head .svg-holder svg {
+          width: 10vw;
+          height: auto;
+          margin-bottom: 20px; }
+          #arrondissement.ambiance .panel .head .svg-holder svg .st0 {
+            fill: #8e8ef4; }
+          #arrondissement.ambiance .panel .head .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.ambiance .panel .head .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: 0;
+          width: 90%;
+          height: 8px;
+          background-color: #8e8ef4; }
+    #arrondissement.ambiance .panel .list {
+      overflow-y: auto;
+      padding-top: 3rem;
+      width: calc(100% - 5vw);
+      height: calc(100% - 12vw); }
+      #arrondissement.ambiance .panel .list::-webkit-scrollbar {
+        width: 0.75rem; }
+      #arrondissement.ambiance .panel .list::-webkit-scrollbar-thumb {
+        background-color: #4033C1;
+        outline: 1px solid slategrey; }
+      #arrondissement.ambiance .panel .list .item {
+        width: 60%;
+        padding: 0 20%;
+        margin-bottom: 1rem; }
+        #arrondissement.ambiance .panel .list .item h2 a, #arrondissement.ambiance .panel .list .item h2 span {
+          color: #8e8ef4;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-decoration: none; }
+        #arrondissement.ambiance .panel .list .item p {
+          color: #8e8ef4;
+          padding-left: 1rem;
+          padding-bottom: 0.5rem;
+          font-weight: 400;
+          font-style: italic; }
+  #arrondissement.ambiance #map {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease; }
+    #arrondissement.ambiance #map.ng-hide {
+      top: 100vw; }
+    #arrondissement.ambiance #map .back-btn {
+      color: #171717;
+      font-weight: 600;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      right: 3vh;
+      top: 3vh;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      #arrondissement.ambiance #map .back-btn:hover {
+        background-color: #f7f7f7; }
+    #arrondissement.ambiance #map .map-inner {
+      height: 100% !important; }
+      #arrondissement.ambiance #map .map-inner .gm-style-iw {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0.5rem;
+        background-color: #ffffff;
+        box-shadow: none;
+        border: solid 4px #130084; }
+        #arrondissement.ambiance #map .map-inner .gm-style-iw h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700; }
+  #arrondissement.tranquille .left {
+    height: 100%;
+    width: 30vw;
+    position: relative;
+    background-color: #3D38E8;
+    z-index: 1; }
+    #arrondissement.tranquille .left .name {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 2rem;
+      position: absolute;
+      top: 5%;
+      left: 20%; }
+      #arrondissement.tranquille .left .name:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 100%;
+        height: 8px;
+        background-color: #130084; }
+    #arrondissement.tranquille .left .btn {
+      position: absolute;
+      top: 15%;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.375rem;
+      font-style: italic;
+      display: inline-block;
+      width: 70%;
+      margin: 0 15%;
+      padding: 1rem 0;
+      border: solid 6px #130084;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer; }
+      #arrondissement.tranquille .left .btn:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -110%;
+        width: 100%;
+        height: 100%;
+        background-color: #130084;
+        border: solid 6px #130084;
+        transition: left 0.3s ease;
+        z-index: -1; }
+      #arrondissement.tranquille .left .btn:hover:before {
+        left: 0; }
+    #arrondissement.tranquille .left .img-holder {
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 10%;
+      width: 100%;
+      box-sizing: border-box; }
+      #arrondissement.tranquille .left .img-holder img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+      #arrondissement.tranquille .left .img-holder:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 60%;
+        height: 12px;
+        background-color: #130084; }
+  #arrondissement.tranquille .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #arrondissement.tranquille .right.three .row:first-child {
+      background-color: #ffffff; }
+    #arrondissement.tranquille .right.three .row:nth-child(2) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #fcfcfc; }
+    #arrondissement.tranquille .right.three .row:nth-child(3) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #f7f7f7; }
+    #arrondissement.tranquille .right.two .row:first-child {
+      background-color: #fcfcfc; }
+    #arrondissement.tranquille .right.two .row:last-child {
+      background-color: #f7f7f7; }
+    #arrondissement.tranquille .right.one .row {
+      background-color: #ffffff;
+      height: 100%; }
+    #arrondissement.tranquille .right .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 50%;
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      cursor: pointer; }
+      #arrondissement.tranquille .right .row:hover .svg-holder svg {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15); }
+      #arrondissement.tranquille .right .row p {
+        font-style: italic;
+        color: #130084;
+        margin-bottom: 1rem; }
+        #arrondissement.tranquille .right .row p span.count {
+          font-size: 4rem;
+          font-weight: 700; }
+        #arrondissement.tranquille .right .row p span.name {
+          font-size: 1.875rem;
+          font-weight: 600; }
+      #arrondissement.tranquille .right .row .svg-holder {
+        position: relative; }
+        #arrondissement.tranquille .right .row .svg-holder svg {
+          display: block;
+          width: 10vw;
+          height: auto;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          transition: all 0.3s ease; }
+          #arrondissement.tranquille .right .row .svg-holder svg .st0 {
+            fill: #130084; }
+          #arrondissement.tranquille .right .row .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.tranquille .right .row .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: -20px;
+          width: 90%;
+          height: 8px;
+          background-color: #130084; }
+  #arrondissement.tranquille .panel {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 70vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease;
+    background-color: #ffffff; }
+    #arrondissement.tranquille .panel.ng-hide {
+      top: 100vw; }
+    #arrondissement.tranquille .panel .back-btn {
+      cursor: pointer;
+      color: #130084;
+      position: absolute;
+      top: 3vh;
+      right: 3vh;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+      overflow-x: hidden; }
+      #arrondissement.tranquille .panel .back-btn:hover:after {
+        left: 40%; }
+      #arrondissement.tranquille .panel .back-btn:after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: #130084;
+        transition: all 0.5s ease-in-out; }
+    #arrondissement.tranquille .panel .head {
+      background-color: #ffffff; }
+      #arrondissement.tranquille .panel .head .svg-holder {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%; }
+        #arrondissement.tranquille .panel .head .svg-holder svg {
+          width: 10vw;
+          height: auto;
+          margin-bottom: 20px; }
+          #arrondissement.tranquille .panel .head .svg-holder svg .st0 {
+            fill: #130084; }
+          #arrondissement.tranquille .panel .head .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.tranquille .panel .head .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: 0;
+          width: 90%;
+          height: 8px;
+          background-color: #130084; }
+    #arrondissement.tranquille .panel .list {
+      overflow-y: auto;
+      padding-top: 3rem;
+      width: calc(100% - 5vw);
+      height: calc(100% - 12vw); }
+      #arrondissement.tranquille .panel .list::-webkit-scrollbar {
+        width: 0.75rem; }
+      #arrondissement.tranquille .panel .list::-webkit-scrollbar-thumb {
+        background-color: #3D38E8;
+        outline: 1px solid slategrey; }
+      #arrondissement.tranquille .panel .list .item {
+        width: 60%;
+        padding: 0 20%;
+        margin-bottom: 1rem; }
+        #arrondissement.tranquille .panel .list .item h2 a, #arrondissement.tranquille .panel .list .item h2 span {
+          color: #130084;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-decoration: none; }
+        #arrondissement.tranquille .panel .list .item p {
+          color: #130084;
+          padding-left: 1rem;
+          padding-bottom: 0.5rem;
+          font-weight: 400;
+          font-style: italic; }
+  #arrondissement.tranquille #map {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease; }
+    #arrondissement.tranquille #map.ng-hide {
+      top: 100vw; }
+    #arrondissement.tranquille #map .back-btn {
+      color: #171717;
+      font-weight: 600;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      right: 3vh;
+      top: 3vh;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      #arrondissement.tranquille #map .back-btn:hover {
+        background-color: #f7f7f7; }
+    #arrondissement.tranquille #map .map-inner {
+      height: 100% !important; }
+      #arrondissement.tranquille #map .map-inner .gm-style-iw {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0.5rem;
+        background-color: #ffffff;
+        box-shadow: none;
+        border: solid 4px #130084; }
+        #arrondissement.tranquille #map .map-inner .gm-style-iw h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700; }
+  #arrondissement.calme .left {
+    height: 100%;
+    width: 30vw;
+    position: relative;
+    background-color: #130084;
+    z-index: 1; }
+    #arrondissement.calme .left .name {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 2rem;
+      position: absolute;
+      top: 5%;
+      left: 20%; }
+      #arrondissement.calme .left .name:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 100%;
+        height: 8px;
+        background-color: #8e8ef4; }
+    #arrondissement.calme .left .btn {
+      position: absolute;
+      top: 15%;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.375rem;
+      font-style: italic;
+      display: inline-block;
+      width: 70%;
+      margin: 0 15%;
+      padding: 1rem 0;
+      border: solid 6px #8e8ef4;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer; }
+      #arrondissement.calme .left .btn:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -110%;
+        width: 100%;
+        height: 100%;
+        background-color: #8e8ef4;
+        border: solid 6px #8e8ef4;
+        transition: left 0.3s ease;
+        z-index: -1; }
+      #arrondissement.calme .left .btn:hover:before {
+        left: 0; }
+    #arrondissement.calme .left .img-holder {
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 10%;
+      width: 100%;
+      box-sizing: border-box; }
+      #arrondissement.calme .left .img-holder img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+      #arrondissement.calme .left .img-holder:after {
+        content: '';
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+        width: 60%;
+        height: 12px;
+        background-color: #8e8ef4; }
+  #arrondissement.calme .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #arrondissement.calme .right.three .row:first-child {
+      background-color: #ffffff; }
+    #arrondissement.calme .right.three .row:nth-child(2) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #fcfcfc; }
+    #arrondissement.calme .right.three .row:nth-child(3) {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%;
+      background-color: #f7f7f7; }
+    #arrondissement.calme .right.two .row:first-child {
+      background-color: #fcfcfc; }
+    #arrondissement.calme .right.two .row:last-child {
+      background-color: #f7f7f7; }
+    #arrondissement.calme .right.one .row {
+      background-color: #ffffff;
+      height: 100%; }
+    #arrondissement.calme .right .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 50%;
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      cursor: pointer; }
+      #arrondissement.calme .right .row:hover .svg-holder svg {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15); }
+      #arrondissement.calme .right .row p {
+        font-style: italic;
+        color: #8e8ef4;
+        margin-bottom: 1rem; }
+        #arrondissement.calme .right .row p span.count {
+          font-size: 4rem;
+          font-weight: 700; }
+        #arrondissement.calme .right .row p span.name {
+          font-size: 1.875rem;
+          font-weight: 600; }
+      #arrondissement.calme .right .row .svg-holder {
+        position: relative; }
+        #arrondissement.calme .right .row .svg-holder svg {
+          display: block;
+          width: 10vw;
+          height: auto;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          transition: all 0.3s ease; }
+          #arrondissement.calme .right .row .svg-holder svg .st0 {
+            fill: #8e8ef4; }
+          #arrondissement.calme .right .row .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.calme .right .row .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: -20px;
+          width: 90%;
+          height: 8px;
+          background-color: #8e8ef4; }
+  #arrondissement.calme .panel {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 70vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease;
+    background-color: #ffffff; }
+    #arrondissement.calme .panel.ng-hide {
+      top: 100vw; }
+    #arrondissement.calme .panel .back-btn {
+      cursor: pointer;
+      color: #8e8ef4;
+      position: absolute;
+      top: 3vh;
+      right: 3vh;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+      overflow-x: hidden; }
+      #arrondissement.calme .panel .back-btn:hover:after {
+        left: 40%; }
+      #arrondissement.calme .panel .back-btn:after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: #8e8ef4;
+        transition: all 0.5s ease-in-out; }
+    #arrondissement.calme .panel .head {
+      background-color: #ffffff; }
+      #arrondissement.calme .panel .head .svg-holder {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%; }
+        #arrondissement.calme .panel .head .svg-holder svg {
+          width: 10vw;
+          height: auto;
+          margin-bottom: 20px; }
+          #arrondissement.calme .panel .head .svg-holder svg .st0 {
+            fill: #8e8ef4; }
+          #arrondissement.calme .panel .head .svg-holder svg .st1 {
+            fill: #ffffff; }
+        #arrondissement.calme .panel .head .svg-holder:after {
+          content: '';
+          position: absolute;
+          left: 5%;
+          bottom: 0;
+          width: 90%;
+          height: 8px;
+          background-color: #8e8ef4; }
+    #arrondissement.calme .panel .list {
+      overflow-y: auto;
+      padding-top: 3rem;
+      width: calc(100% - 5vw);
+      height: calc(100% - 12vw); }
+      #arrondissement.calme .panel .list::-webkit-scrollbar {
+        width: 0.75rem; }
+      #arrondissement.calme .panel .list::-webkit-scrollbar-thumb {
+        background-color: #130084;
+        outline: 1px solid slategrey; }
+      #arrondissement.calme .panel .list .item {
+        width: 60%;
+        padding: 0 20%;
+        margin-bottom: 1rem; }
+        #arrondissement.calme .panel .list .item h2 a, #arrondissement.calme .panel .list .item h2 span {
+          color: #8e8ef4;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-decoration: none; }
+        #arrondissement.calme .panel .list .item p {
+          color: #8e8ef4;
+          padding-left: 1rem;
+          padding-bottom: 0.5rem;
+          font-weight: 400;
+          font-style: italic; }
+  #arrondissement.calme #map {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    z-index: 2;
+    transition: all 0.3s ease; }
+    #arrondissement.calme #map.ng-hide {
+      top: 100vw; }
+    #arrondissement.calme #map .back-btn {
+      color: #171717;
+      font-weight: 600;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      right: 3vh;
+      top: 3vh;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      #arrondissement.calme #map .back-btn:hover {
+        background-color: #f7f7f7; }
+    #arrondissement.calme #map .map-inner {
+      height: 100% !important; }
+      #arrondissement.calme #map .map-inner .gm-style-iw {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0.5rem;
+        background-color: #ffffff;
+        box-shadow: none;
+        border: solid 4px #130084; }
+        #arrondissement.calme #map .map-inner .gm-style-iw h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700; }
+
+#statistiques {
+  width: 100vw;
+  height: 90%;
+  padding: 0 15vw 0 15vw;
+  box-sizing: border-box;
+  overflow-y: hidden; }
+  #statistiques .ct-chart {
+    width: 100%;
+    height: 95%;
+    margin-top: 5%; }
+    #statistiques .ct-chart .chartist-tooltip {
+      position: absolute;
+      background-color: #171717;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      -webkit-transform: translate(100%, 100%);
+      transform: translate(100%, 100%); }
+      #statistiques .ct-chart .chartist-tooltip br {
+        display: none; }
+      #statistiques .ct-chart .chartist-tooltip:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 30px;
+        -webkit-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+        height: 4px;
+        background-color: #171717; }
+    #statistiques .ct-chart g.ct-series {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+      -webkit-animation: pop 0.5s ease;
+      animation: pop 0.5s ease; }
+      #statistiques .ct-chart g.ct-series:nth-child(1) {
+        -webkit-animation-delay: 0.01s;
+        animation-delay: 0.01s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-1:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-1:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-1:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-1:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(2) {
+        -webkit-animation-delay: 0.02s;
+        animation-delay: 0.02s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-2:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-2:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-2:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-2:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(3) {
+        -webkit-animation-delay: 0.03s;
+        animation-delay: 0.03s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-3:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-3:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-3:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-3:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(4) {
+        -webkit-animation-delay: 0.04s;
+        animation-delay: 0.04s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-4:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-4:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-4:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-4:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(5) {
+        -webkit-animation-delay: 0.05s;
+        animation-delay: 0.05s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-5:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-5:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-5:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-5:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(6) {
+        -webkit-animation-delay: 0.06s;
+        animation-delay: 0.06s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-6:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-6:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-6:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-6:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(7) {
+        -webkit-animation-delay: 0.07s;
+        animation-delay: 0.07s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-7:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-7:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-7:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-7:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(8) {
+        -webkit-animation-delay: 0.08s;
+        animation-delay: 0.08s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-8:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-8:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-8:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-8:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(9) {
+        -webkit-animation-delay: 0.09s;
+        animation-delay: 0.09s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-9:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-9:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-9:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-9:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(10) {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-10:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-10:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-10:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-10:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(11) {
+        -webkit-animation-delay: 0.11s;
+        animation-delay: 0.11s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-11:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-11:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-11:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-11:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(12) {
+        -webkit-animation-delay: 0.12s;
+        animation-delay: 0.12s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-12:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-12:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-12:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-12:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(13) {
+        -webkit-animation-delay: 0.13s;
+        animation-delay: 0.13s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-13:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-13:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-13:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-13:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(14) {
+        -webkit-animation-delay: 0.14s;
+        animation-delay: 0.14s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-14:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-14:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-14:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-14:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(15) {
+        -webkit-animation-delay: 0.15s;
+        animation-delay: 0.15s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-15:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-15:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-15:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-15:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(16) {
+        -webkit-animation-delay: 0.16s;
+        animation-delay: 0.16s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-16:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-16:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-16:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-16:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(17) {
+        -webkit-animation-delay: 0.17s;
+        animation-delay: 0.17s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-17:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-17:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-17:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-17:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(18) {
+        -webkit-animation-delay: 0.18s;
+        animation-delay: 0.18s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-18:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-18:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-18:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-18:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(19) {
+        -webkit-animation-delay: 0.19s;
+        animation-delay: 0.19s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-19:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-19:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-19:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-19:not(.off):hover.calme {
+        stroke: #0c0051; }
+      #statistiques .ct-chart g.ct-series:nth-child(20) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s; }
+      #statistiques .ct-chart g.ct-series line.l-2 {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px); }
+      #statistiques .ct-chart g.ct-series line.l-3 {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px); }
+      #statistiques .ct-chart g.ct-series line.n-20:not(.off):hover.dejante {
+        stroke: #6060ef; }
+      #statistiques .ct-chart g.ct-series line.n-20:not(.off):hover.ambiance {
+        stroke: #332899; }
+      #statistiques .ct-chart g.ct-series line.n-20:not(.off):hover.tranquille {
+        stroke: #1e19d4; }
+      #statistiques .ct-chart g.ct-series line.n-20:not(.off):hover.calme {
+        stroke: #0c0051; }
+
+@-webkit-keyframes pop {
+  from {
+    -webkit-transform: translateY(100vh);
+    transform: translateY(100vh); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes pop {
+  from {
+    -webkit-transform: translateY(100vh);
+    transform: translateY(100vh); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+      #statistiques .ct-chart g.ct-series rect {
+        transition: all 0.3s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
+      #statistiques .ct-chart g.ct-series line {
+        transition: all 0.3s ease; }
+        #statistiques .ct-chart g.ct-series line.dejante {
+          stroke: #8E8EF4; }
+        #statistiques .ct-chart g.ct-series line.ambiance {
+          stroke: #4033C1; }
+        #statistiques .ct-chart g.ct-series line.tranquille {
+          stroke: #3D38E8; }
+        #statistiques .ct-chart g.ct-series line.calme {
+          stroke: #130084; }

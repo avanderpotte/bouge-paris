@@ -1,0 +1,71 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.view {
+  height: 100%;
+  transform: 50% 50%;
+}
+
+.view.ng-enter {
+  z-index: 8888;
+}
+.view.ng-leave {
+  z-index: 9999;
+}
+
+.view-accueil.ng-enter {
+  animation: fadeIn 0.3s both ease-in-out 0.3s;
+}
+
+.view-accueil.ng-leave{
+  animation: fadeOut 0.3s both ease-in;
+}
+
+.view-arrondissement.ng-enter {
+  animation: zoomIn 0.3s both ease;
+}
+
+.view-arrondissement.ng-leave {
+  animation: fadeOut 0.3s both linear;
+}
+
+.view-statistiques.ng-enter {
+  animation: fadeIn 0.3s both ease-in-out 0.3s;
+}
+
+.view-statistiques.ng-leave{
+  animation: fadeOut 0.3s both ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

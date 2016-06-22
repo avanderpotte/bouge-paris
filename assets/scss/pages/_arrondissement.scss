@@ -1,0 +1,41 @@
+#arrondissement {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+    &.dejante {
+      $primary: $dejante;
+      $darkenPrimary: $darkenDejante;
+      @import 'arrondissement/arrondissementLeft';
+      @import 'arrondissement/arrondissementRight';
+      @import 'arrondissement/panel';
+      @import 'arrondissement/map';
+    }
+
+    &.ambiance {
+      $primary: $ambiance;
+      $darkenPrimary: $darkenAmbiance;
+      @import 'arrondissement/arrondissementLeft';
+      @import 'arrondissement/arrondissementRight';
+      @import 'arrondissement/panel';
+      @import 'arrondissement/map';
+    }
+
+    &.tranquille {
+      $primary: $tranquille;
+      $darkenPrimary: $darkenTranquille;
+      @import 'arrondissement/arrondissementLeft';
+      @import 'arrondissement/arrondissementRight';
+      @import 'arrondissement/panel';
+      @import 'arrondissement/map';
+    }
+
+    &.calme {
+      $primary: $calme;
+      $darkenPrimary: $darkenCalme;
+      @import 'arrondissement/arrondissementLeft';
+      @import 'arrondissement/arrondissementRight';
+      @import 'arrondissement/panel';
+      @import 'arrondissement/map';
+    }
+}

@@ -1,0 +1,56 @@
+<section id="arrondissement" class="n-{{$root.arrondissement}} {{$root.type}}">
+  <div class="left">
+    <div class="name">Jean <span ng-bind="name"></span></div>
+    <p href="#map" class="btn" ng-click="showMap = !showMap">Voir la map du <span ng-bind="$root.arrondissement"></span>ème</p>
+    <div class="img-holder">
+      <img src="/assets/img/arrondissement/characters/{{$root.type}}.gif" alt="">
+    </div>
+  </div>
+  <div class="right">
+    <div class="row" ng-repeat="info in infos" ng-click="slidePanel(info.slug)">
+      <p><span class="count" ng-bind="info.count"></span> <span class="name" ng-bind="info.name"></span></p>
+      <div class="svg-holder">
+        <icon-svg name="{{info.slug}}"></icon-svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" ng-show="showPanel">
+    <p class="back-btn" ng-click="showPanel = !showPanel">Retour</p>
+    <div class="head">
+      <div class="svg-holder">
+        <icon-svg name="{{panel}}"></icon-svg>
+      </div>
+    </div>
+    <div class="list">
+      <div class="item" ng-repeat="el in list">
+        <h2><span ng-if="!el.lien" ng-bind="el.nom"></span><a href="{{el.lien}}" target="_blank" ng-bind="el.nom" ng-if="el.lien.length > 0"></a></h2>
+        <p ng-bind="el.adresse.toLowerCase()"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="map" ng-if="showMap" map-lazy-load="http://maps.google.com/maps/api/js">
+    <map class="map-inner" default-style="false" center="{{arrCenter}}" zoom="15" disable-default-u-i="true">
+      <marker ng-repeat="m in museesPos" position="{{m.lat}},{{m.long}}" icon="{
+        url: 'assets/img/arrondissement/markers/{{$root.type}}/musees.svg',
+        origin: [0,0],
+        anchor: [50,50]
+      }" on-click="showInfoWindow(event, m)">
+      </marker>
+      <marker ng-repeat="c in cinemasPos" position="{{c.lat}},{{c.long}}" icon="{
+        url: 'assets/img/arrondissement/markers/{{$root.type}}/cinemas.svg',
+        origin: [0,0],
+        anchor: [50,50]
+      }" on-click="showInfoWindow(event, c)">
+      </marker>
+      <marker ng-repeat="e in evenementsPos" position="{{e.lat}},{{e.long}}" icon="{
+        url: 'assets/img/arrondissement/markers/{{$root.type}}/evenements.svg',
+        origin: [0,0],
+        anchor: [50,50]
+      }" on-click="showInfoWindow(event, e)">
+    </marker>
+    </map>
+    <p class="back-btn" ng-click="toggleMap()">Retour</p>
+  </div>
+</section>
